@@ -139,7 +139,10 @@ def play(board)
 
   while !over?(board) do
     turn(board)
-    won?(board)
+    winner = won?(board)
+    if winner
+      "The winner is #{winner(board)}"
+    end
     draw?(board)
 
   end
