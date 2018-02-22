@@ -139,19 +139,7 @@ def play(board)
   while !over?(board) do
     turn(board)
     winner(board)
-      if winner(board)
-        return "Yay!"
-      end
-    over?(board)
+    draw?(board)
     value = current_player(board)
   end
-
-  if winner(board) == "X"
-     "Congratulations the winner X"
-  elsif winner(board) == "O"
-     "Congratulations, O is the winner!"
-  else
-    puts "The game has ended in a tie."
-  end
-
 end
