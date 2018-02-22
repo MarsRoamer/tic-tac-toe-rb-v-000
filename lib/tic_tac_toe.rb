@@ -142,5 +142,12 @@ def play(board)
     over?(board)
     value = current_player(board)
   end
-  puts "The game has ended in a draw!"
+  if winner(board) == "X"
+    puts "Congratulations, X is the winner!"
+  elsif winner(board) == "O"
+    puts "Congratulations, O is the winner!"
+  else
+    puts "The game has ended in a tie."
+  end
+    
 end
