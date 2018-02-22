@@ -149,5 +149,5 @@ def play(board)
   else
     puts "The game has ended in a tie."
   end
-    
+
 end
