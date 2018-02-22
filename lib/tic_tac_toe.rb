@@ -148,4 +148,5 @@ def play(board)
   end
   if winner
     return "Yay, #{winner(board)}"
+  end
 end
