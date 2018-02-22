@@ -142,6 +142,7 @@ def play(board)
     winner = won?(board)
     if winner
       puts "The winner is #{winner(board)}"
+      break
     end
     draw?(board)
 
