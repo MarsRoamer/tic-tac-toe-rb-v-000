@@ -142,5 +142,5 @@ def play(board)
     over?(board)
     value = current_player(board)
   end
-
+  puts "The game has ended in a draw!"
 end
