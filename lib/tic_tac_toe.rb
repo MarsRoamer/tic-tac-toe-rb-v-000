@@ -143,11 +143,11 @@ def play(board)
     value = current_player(board)
   end
   if winner(board) == "X"
-     "Congratulations,  the winner is X"
+     "Congratulations the winner X"
   elsif winner(board) == "O"
-     "Congratulations, the winner is O"
+     "Congratulations, O is the winner!"
   else
-    puts "Cats Game!"
+    puts "The game has ended in a tie."
   end
 
 end
