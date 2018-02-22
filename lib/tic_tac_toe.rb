@@ -123,9 +123,9 @@ won?(board)
       position_2 = board[win_index_2]
       position_3 = board[win_index_3]
       if position_1 == "X" && position_2 == "X" && position_3 == "X"
-        return "Congratulations the winner X"
+        return "X"
       elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
-        return "Congratulations the winner O"
+        return "O"
 
       end
     end
@@ -143,9 +143,9 @@ def play(board)
     value = current_player(board)
   end
   if winner(board) == "X"
-     "Congratulations the winner X"
+     "Congratulations,  the winner is X"
   elsif winner(board) == "O"
-     "Congratulations the winner O"
+     "Congratulations, the winner is O"
   else
     puts "Cats Game!"
   end
