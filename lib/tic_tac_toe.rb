@@ -141,7 +141,7 @@ def play(board)
     turn(board)
     winner = won?(board)
     if winner
-      print "Yay, #{winner(board)}"
+      print "Congratulations, the winner is #{winner(board)}!"
     end
     draw?(board)
 
