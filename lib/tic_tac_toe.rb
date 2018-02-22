@@ -134,7 +134,7 @@ won?(board)
 
 def play(board)
   turn(board)
-  over?(board)
+
   value = current_player(board)
   while !over?(board) do
     turn(board)
