@@ -133,6 +133,7 @@ won?(board)
   end
 
 def play(board)
+  won?(board)
   turn(board)
   over?(board)
 
