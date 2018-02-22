@@ -140,6 +140,6 @@ def play(board)
     turn(board)
     winner(board)
     draw?(board)
-  
+
   end
 end
