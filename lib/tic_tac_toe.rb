@@ -141,7 +141,7 @@ def play(board)
     turn(board)
     winner = won?(board)
     if winner
-      break
+      print "Yay, #{winner(board)}"
     end
     draw?(board)
 
