@@ -141,6 +141,5 @@ def play(board)
     winner(board)
     draw?(board)
     value = current_player(board)
-    over?(board)
   end
 end
