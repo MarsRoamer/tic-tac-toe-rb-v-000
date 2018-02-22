@@ -133,10 +133,7 @@ won?(board)
   end
 
 def play(board)
-  won?(board)
   turn(board)
-  over?(board)
-
   while !over?(board) do
     turn(board)
     winner = won?(board)
