@@ -138,10 +138,9 @@ def play(board)
   value = current_player(board)
   while !over?(board) do
     turn(board)
-    if winner(board)
-      break
-    end
+    winner(board)
     draw?(board)
     value = current_player(board)
+    over?(board)
   end
 end
