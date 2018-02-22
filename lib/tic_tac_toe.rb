@@ -139,9 +139,13 @@ def play(board)
   while !over?(board) do
     turn(board)
     winner(board)
+      if winner(board) 
+        return "Yay!"
+        
     over?(board)
     value = current_player(board)
   end
+  
   if winner(board) == "X"
      "Congratulations the winner X"
   elsif winner(board) == "O"
